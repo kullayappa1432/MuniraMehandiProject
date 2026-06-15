@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Munira Mehandhi | Premium Natural Henna</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1d1d03",
+                        "on-secondary-fixed": "#241a00",
+                        "outline-variant": "#c1c8c2",
+                        "outline": "#717973",
+                        "background": "#fefccf",
+                        "inverse-on-surface": "#f5f3c7",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-background": "#1d1d03",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#eceabe",
+                        "primary-fixed": "#c1ecd4",
+                        "tertiary": "#37201b",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#e5beb5",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#86af99",
+                        "secondary-fixed": "#ffe088",
+                        "on-primary-fixed": "#002114",
+                        "on-tertiary-fixed-variant": "#5c403a",
+                        "inverse-surface": "#323214",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fefccf",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "surface-container-low": "#f8f6c9",
+                        "on-tertiary-fixed": "#2b1611",
+                        "primary-container": "#1b4332",
+                        "on-surface-variant": "#414844",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#ffdad2",
+                        "secondary-container": "#fed65b",
+                        "primary": "#012d1d",
+                        "surface-container": "#f2f0c4",
+                        "on-secondary-container": "#745c00",
+                        "surface-dim": "#dedcb1",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "on-tertiary-container": "#c29e96",
+                        "on-secondary-fixed-variant": "#574500",
+                        "tertiary-container": "#4f352f",
+                        "inverse-primary": "#a5d0b9",
+                        "surface-container-highest": "#e6e5b9",
+                        "secondary": "#735c00",
+                        "surface-tint": "#3f6653",
+                        "surface-variant": "#e6e5b9",
+                        "surface": "#fefccf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "container-padding-desktop": "64px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "container-padding-mobile": "20px",
+                        "stack-sm": "12px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Playfair Display"],
+                        "label-md": ["Montserrat"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Montserrat"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .henna-pattern-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            opacity: 0.05;
+        }
+        .whatsapp-gradient {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        }
+        .glass-card {
+            background: rgba(254, 252, 207, 0.7);
+            backdrop-filter: blur(10px);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .brand-logo {
+            width: 52px;
+            height: 52px;
+            object-fit: contain;
+            border-radius: 9999px;
+            background: #ffffff;
+            box-shadow: 0 6px 18px rgba(1, 45, 29, 0.12);
+        }
+        .product-hero-image {
+            object-position: center;
+            background: #ffffff;
+        }
+        .product-video {
+            width: 100%;
+            max-height: 720px;
+            aspect-ratio: 16 / 9;
+            object-fit: contain;
+            background: #012d1d;
+        }
+        .founder-photo {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            object-position: center;
+        }
+        @media (max-width: 640px) {
+            .product-video {
+                aspect-ratio: 9 / 16;
+                max-height: 78vh;
+            }
+            .founder-photo {
+                height: 320px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/90 dark:bg-background/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop h-20 w-full max-w-[1280px] mx-auto">
+<a class="flex items-center gap-3" href="#top" aria-label="Munira Mehandhi home">
+<img class="brand-logo" src="images/logo.jpeg" alt="Munira Mehandhi logo"/>
+<span class="font-display-lg text-headline-md text-primary dark:text-primary-fixed tracking-tight">Munira Mehandhi</span>
+</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors font-body-md text-body-md" href="#products">Products</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors font-body-md text-body-md" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors font-body-md text-body-md" href="#order-process">How to Order</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors font-body-md text-body-md" href="#contact">Contact</a>
+<a class="whatsapp-gradient text-white px-6 py-3 rounded-xl font-label-md text-label-md hover:shadow-lg transition-all active:scale-95 flex items-center gap-2" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">chat</span>
+Order on WhatsApp
+</a>
+</div>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="top">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A top-down macro shot of freshly prepared natural henna paste being piped into intricate floral patterns on a smooth, pale skin surface. The lighting is soft and golden, highlighting the rich dark green texture of the paste. The background features scattered dry henna leaves and a traditional wooden bowl, creating a rustic yet luxurious beauty atmosphere consistent with a premium organic mehandi brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo685HhYugLvoPG_JyvB_JbZDZs46LbYDsW0Sbj4fgOS3O91HeiV89ikCEyP4Bd_myhMS11k-8y7s-M64vpRKKGkWrN8jcWQO2JmfHLPWeI9BTlJhD37VPHk6IamtwNe_YAOPZUDhrksYHiRySo3hbUQZzQKDtA7S3GdR42OGT8olO_gCa8_B89XwXXVQrfs3NVDgQQpWsXx40k3X_NXTj7f1sDHoW745Q-oFhd_l-K30eMY0o8woGE1qlV8GQ2ZJXeCgi5VOX3UQU"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-brightness-75"></div>
+<div class="absolute inset-0 henna-pattern-overlay"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1280px] mx-auto px-container-padding-mobile md:px-container-padding-desktop">
+<div class="max-w-2xl text-white">
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">Munira Mehandhi</h1>
+<p class="font-body-lg text-body-lg mb-10 text-white/90">Natural Mehandi Products for Beautiful Designs. Handcrafted with love and ancient wisdom for your most special moments.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary hover:bg-primary-container text-white px-8 py-4 rounded-xl font-label-md text-label-md text-center transition-all shadow-lg active:scale-95" href="#products">View Products</a>
+<a class="whatsapp-gradient text-white px-8 py-4 rounded-xl font-label-md text-label-md text-center transition-all shadow-lg active:scale-95 flex items-center justify-center gap-2" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Order on WhatsApp
+                    </a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-stack-lg px-container-padding-mobile md:px-container-padding-desktop max-w-[1280px] mx-auto" id="products">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-headline-lg text-primary mb-4">Featured Product</h2>
+<div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 max-w-xl mx-auto">
+<!-- Card 1 -->
+<div class="reveal-on-scroll bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-outline-variant/20 flex flex-col group">
+<div class="relative overflow-hidden h-72">
+<img class="w-full h-full object-cover product-hero-image transition-transform duration-500 group-hover:scale-105" alt="Munira Mehandhi featured product" src="images/munnu.jpeg"/>
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-md text-sm">Best Seller</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Munira Mehandhi Product</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Fresh, smooth, ready-to-use mehandhi made for clean application and beautiful natural designs.</p>
+<div class="flex items-center justify-between mt-auto mb-4">
+<span class="text-2xl font-bold text-primary">Rs. 150 <small class="text-sm font-normal">/ Pack of 10</small></span>
+</div>
+<a class="w-full whatsapp-gradient text-white py-3 rounded-lg font-label-md hover:shadow-lg transition-all flex items-center justify-center gap-2" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Order on WhatsApp
+                    </a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="hidden reveal-on-scroll bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-outline-variant/20 flex flex-col group" style="transition-delay: 150ms;">
+<div class="relative overflow-hidden h-72">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A heap of vibrant, finely ground olive-green mehandi powder in a rustic clay bowl. The lighting is dramatic, casting soft shadows that highlight the fine texture of the powder. Beside the bowl lies a bunch of fresh henna leaves, suggesting the organic and pure origin of the product. The scene is warm and grounded, using a palette of forest greens and earthy creams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo3TbnOxfi5y9BGyZQUc47C-eZGrN0oOAWIddsJ_p6JjArehuOntrlpW2PDnTNp56LZHnvYgQD8M39mpPcX7YJAZ7wXlvF0P4v9Ky1m8z6y9unpb7IuBgaSFQ4FBhdwKUNoSMs7B18TM4TDvJDI-POAZ-oNbYj8IXzhsi3a39z8imWHIXTtBGrJZ1BHzvDXEmT13hvSYmmT6ZJTsGzOH_1MgtgP-O4ZirUX6qqIumG2X_rjtxaP9vjmBnDSEjXIK_5RZzYaU6JVqTg"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Organic Mehandi Powder</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Triple-sifted, 100% natural powder made from fresh henna leaves for DIY lovers.</p>
+<div class="flex items-center justify-between mt-auto mb-4">
+<span class="text-2xl font-bold text-primary">₹399 <small class="text-sm font-normal">/ 500g</small></span>
+</div>
+<a class="w-full whatsapp-gradient text-white py-3 rounded-lg font-label-md hover:shadow-lg transition-all flex items-center justify-center gap-2" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Order on WhatsApp
+                    </a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="hidden reveal-on-scroll bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-outline-variant/20 flex flex-col group" style="transition-delay: 300ms;">
+<div class="relative overflow-hidden h-72">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A luxury bridal henna kit displayed on a gold tray. The kit includes multiple henna cones, a small bottle of after-care oil, and a wooden applicator. The setting is opulent, with a blurred background of festive lights and traditional Indian jewelry. The visual style is premium and celebratory, focusing on the quality and completeness of the bridal mehandi experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk3tRGCkqAZbvVs83IgIOnAL9CAkq8LL4eNMQHSZG6LzmoNE3SAqaEmKB2KahV5LSb2rLaYYEZoJXh4DV99vFK2coNJ9Yp-ar6R9Q0y-j7ub8ha9oVr_v7LLQkrxw72MgR8PbK5cfMwosY_X2gI4SaFeOdwlvepP3LMhPbHIj69HWT1Qh0zkrcMCGgI65dv2REaapkiBTsfFRagWABclRUuQ9vo4flsTphHg4Qz9Spb3EE9YALZnXevdkUWQQDzB58achBd6cICS9B"/>
+<div class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full font-label-md text-sm">Special Edition</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Bridal Henna Kit</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">All-in-one kit featuring cones, sealant spray, and after-care oil for long-lasting stains.</p>
+<div class="flex items-center justify-between mt-auto mb-4">
+<span class="text-2xl font-bold text-primary">₹899 <small class="text-sm font-normal">/ Complete Kit</small></span>
+</div>
+<a class="w-full whatsapp-gradient text-white py-3 rounded-lg font-label-md hover:shadow-lg transition-all flex items-center justify-center gap-2" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Order on WhatsApp
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-stack-lg bg-primary-container text-on-primary-container relative overflow-hidden" id="about">
+<div class="absolute inset-0 henna-pattern-overlay opacity-10"></div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-container-padding-mobile md:px-container-padding-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div class="reveal-on-scroll">
+<h2 class="font-display-lg text-display-lg mb-8 text-on-primary">Our Story &amp; Craft</h2>
+<p class="font-body-lg text-body-lg mb-6 text-on-primary/90 leading-relaxed">
+                        Munira Mehandhi provides quality mehandi products for weddings, functions, festivals, and daily designs. We believe that Mehandi is more than just a stain; it is a celebration of moments and traditions.
+                    </p>
+<p class="font-body-md text-body-md text-on-primary/80 mb-8 leading-relaxed">
+                        Every cone is freshly prepared using organic henna leaves from the heart of Rajasthan, ensuring the most vibrant color and skin-safe experience for every bride and enthusiast.
+                    </p>
+<div class="flex gap-8">
+<div>
+<div class="text-3xl font-bold text-secondary-fixed mb-1">10k+</div>
+<div class="font-label-md text-sm opacity-70">Happy Clients</div>
+</div>
+<div>
+<div class="text-3xl font-bold text-secondary-fixed mb-1">100%</div>
+<div class="font-label-md text-sm opacity-70">Natural</div>
+</div>
+<div>
+<div class="text-3xl font-bold text-secondary-fixed mb-1">24h</div>
+<div class="font-label-md text-sm opacity-70">Fresh Prep</div>
+</div>
+</div>
+</div>
+<div class="reveal-on-scroll relative">
+<div class="rounded-2xl overflow-hidden shadow-2xl rotate-3 transform group hover:rotate-0 transition-transform duration-500">
+<img class="w-full h-[500px] object-cover" data-alt="A portrait of a skilled artisan delicately applying henna to a palm, highlighting the intricate detail and concentration required. The background is a soft-focused boutique interior with warm lighting and decorative fabrics. The style is professional and intimate, showcasing the human touch and expertise behind the Munira Mehandhi brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_kr835Pip7NMFdE_50c6ekaXh7iPYghWnH1FP8sJxFb4jP1maluRraiTgrC3mF9o6tM9scsAtYaO5wmzxBTpdBF0nAAnBhl3AD0hRd8kvrF1J9waGGiHr4eAoYg8LyqgUoOKejB9Sc6IyZxir4HcKVpHBVkRJAXKzFhzT3ruL-HJZAjmFYHaSC0b_yHPUqagMCYWA36rWGn2Hv4ksnxCmAMtJDvI7qw3HWbphBqSfXdgn3i5d9l-_b9RpfoL57SwiRptuva7yaM9K"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary p-8 rounded-2xl shadow-xl hidden md:block">
+<span class="material-symbols-outlined text-4xl text-on-secondary">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How to Order Section -->
+<section class="py-stack-lg px-container-padding-mobile md:px-container-padding-desktop max-w-[1280px] mx-auto" id="order-process">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-headline-lg text-primary mb-4">Simple Ordering Process</h2>
+<p class="text-on-surface-variant">Getting your hands on natural mehandi has never been easier.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+<!-- Connector Line (Desktop) -->
+<div class="hidden md:block absolute top-1/4 left-0 w-full h-0.5 bg-outline-variant/30 -z-10"></div>
+<!-- Step 1 -->
+<div class="reveal-on-scroll flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="font-display-lg text-2xl">1</span>
+</div>
+<h3 class="font-headline-md text-xl mb-2">Select Product</h3>
+<p class="text-on-surface-variant text-sm">Browse our catalog and pick your favorites.</p>
+</div>
+<!-- Step 2 -->
+<div class="reveal-on-scroll flex flex-col items-center text-center group" style="transition-delay: 150ms;">
+<div class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="font-display-lg text-2xl">2</span>
+</div>
+<h3 class="font-headline-md text-xl mb-2">WhatsApp Order</h3>
+<p class="text-on-surface-variant text-sm">Click the WhatsApp button on the product card.</p>
+</div>
+<!-- Step 3 -->
+<div class="reveal-on-scroll flex flex-col items-center text-center group" style="transition-delay: 300ms;">
+<div class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="font-display-lg text-2xl">3</span>
+</div>
+<h3 class="font-headline-md text-xl mb-2">Send Address</h3>
+<p class="text-on-surface-variant text-sm">Share your shipping details with us in chat.</p>
+</div>
+<!-- Step 4 -->
+<div class="reveal-on-scroll flex flex-col items-center text-center group" style="transition-delay: 450ms;">
+<div class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="font-display-lg text-2xl">4</span>
+</div>
+<h3 class="font-headline-md text-xl mb-2">Confirm Order</h3>
+<p class="text-on-surface-variant text-sm">Confirm with our team and wait for delivery!</p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-stack-lg bg-surface-container-high px-container-padding-mobile md:px-container-padding-desktop" id="contact">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
+<div class="reveal-on-scroll">
+<h2 class="font-display-lg text-headline-lg text-primary mb-6">Get in Touch</h2>
+<p class="font-body-md text-on-surface-variant mb-10">Have questions or want a custom bridal package? Reach out to us directly.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<div class="font-label-md text-sm text-on-surface-variant">Phone</div>
+<div class="font-body-md font-semibold text-primary">+91 78423 59644</div>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<div class="font-label-md text-sm text-on-surface-variant">Location</div>
+<div class="font-body-md font-semibold text-primary">Jaipur, Rajasthan, India</div>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-white flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</div>
+<div>
+<div class="font-label-md text-sm text-on-surface-variant">Instagram</div>
+<div class="font-body-md font-semibold text-primary">@MuniraMehandhi</div>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal-on-scroll">
+<div class="bg-background p-8 rounded-2xl shadow-sm border border-outline-variant/30 h-full flex flex-col justify-center">
+<h3 class="font-headline-md text-primary mb-4">Ready to Order?</h3>
+<p class="font-body-md text-on-surface-variant mb-8">Tap the button below and send your order directly on WhatsApp. No login, payment page, or cart needed.</p>
+<a class="whatsapp-gradient text-white py-4 px-6 rounded-xl font-label-md hover:shadow-lg transition-all flex items-center justify-center gap-2" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+Order on WhatsApp
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Video Section -->
+<section class="py-stack-lg px-container-padding-mobile md:px-container-padding-desktop max-w-[1280px] mx-auto" id="product-video">
+<div class="text-center mb-10">
+<h2 class="font-display-lg text-headline-lg text-primary mb-4">See the Product Clearly</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">A closer look at the Munira Mehandhi product before you place your WhatsApp order.</p>
+</div>
+<div class="reveal-on-scroll overflow-hidden rounded-2xl shadow-2xl border border-outline-variant/30 bg-primary">
+<video class="product-video" src="images/WhatsApp Video 2026-06-07 at 11.25.18 PM.mp4" controls playsinline preload="metadata" poster="images/munnu.jpeg">
+Your browser does not support the video tag.
+</video>
+</div>
+<div class="text-center mt-8">
+<a class="inline-flex whatsapp-gradient text-white px-8 py-4 rounded-xl font-label-md text-label-md transition-all shadow-lg active:scale-95 items-center justify-center gap-2" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+Order on WhatsApp
+</a>
+</div>
+</section>
+<!-- Founder Section -->
+<section class="py-stack-lg px-container-padding-mobile md:px-container-padding-desktop bg-surface-container-low" id="founder">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div class="reveal-on-scroll overflow-hidden rounded-2xl shadow-xl border border-outline-variant/30 bg-white">
+<img class="founder-photo" src="images/munnu.jpeg" alt="Founder Shaik Munira"/>
+</div>
+<div class="reveal-on-scroll">
+<p class="font-label-md text-secondary uppercase mb-3">Founder</p>
+<h2 class="font-display-lg text-headline-lg text-primary mb-5">Shaik Munira</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+Shaik Munira is the heart behind Munira Mehandhi, bringing care, patience, and a love for traditional beauty into every product. Her work focuses on fresh quality, smooth application, and designs that feel special for weddings, festivals, and everyday moments.
+</p>
+<p class="font-body-md text-on-surface-variant mb-8 leading-relaxed">
+Every order is handled with a personal touch, keeping the experience simple, trustworthy, and connected directly through WhatsApp.
+</p>
+<a class="inline-flex whatsapp-gradient text-white px-8 py-4 rounded-xl font-label-md text-label-md transition-all shadow-lg active:scale-95 items-center justify-center gap-2" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+Order on WhatsApp
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-t-xl bg-primary dark:bg-primary-container flex flex-col md:flex-row justify-between items-center py-stack-lg px-container-padding-mobile md:px-container-padding-desktop gap-gutter">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<span class="font-display-lg text-headline-md text-on-primary">Munira Mehandhi</span>
+<p class="font-body-md text-on-primary/70 max-w-sm">&copy; 2026 Munira Mehandhi. All orders exclusively via WhatsApp. Traditional craft meets modern standards.</p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<div class="flex gap-8">
+<a class="text-on-primary/70 hover:text-on-primary font-label-md hover:underline decoration-secondary-fixed underline-offset-4 transition-colors" href="privacy-policy.html">Privacy Policy</a>
+<a class="text-on-primary/70 hover:text-on-primary font-label-md hover:underline decoration-secondary-fixed underline-offset-4 transition-colors" href="terms-of-service.html">Terms of Service</a>
+<a class="text-on-primary/70 hover:text-on-primary font-label-md hover:underline decoration-secondary-fixed underline-offset-4 transition-colors" href="shipping-info.html">Shipping Info</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-on-primary/10 flex items-center justify-center hover:bg-on-primary/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-on-primary">face_nod</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-on-primary/10 flex items-center justify-center hover:bg-on-primary/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-on-primary">share</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp FAB -->
+<a class="fixed bottom-8 right-8 z-[100] whatsapp-gradient text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product" aria-label="Order on WhatsApp">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="absolute right-full mr-4 bg-white text-primary px-4 py-2 rounded-lg text-sm font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">Order on WhatsApp</span>
+</a>
+<script>
+        // Reveal on scroll logic
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body></html>
