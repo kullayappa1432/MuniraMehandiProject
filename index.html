@@ -174,10 +174,22 @@
 Order on WhatsApp
 </a>
 </div>
-<!-- Mobile Menu Toggle (Simplified) -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary w-11 h-11 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors" id="mobile-menu-button" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+<span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
 </button>
+</div>
+<div class="hidden md:hidden border-t border-outline-variant/30 bg-background/95 backdrop-blur-md shadow-lg" id="mobile-menu">
+<div class="px-container-padding-mobile py-5 flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md py-2" href="#products">Products</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md py-2" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md py-2" href="#order-process">How to Order</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md py-2" href="#contact">Contact</a>
+<a class="whatsapp-gradient text-white px-6 py-3 rounded-xl font-label-md text-label-md transition-all active:scale-95 flex items-center justify-center gap-2" href="https://wa.me/917842359644?text=Hi%20I%20want%20to%20order%20this%20product">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">chat</span>
+Order on WhatsApp
+</a>
+</div>
 </div>
 </nav>
 <!-- Hero Section -->
@@ -480,6 +492,33 @@ Order on WhatsApp
         document.querySelectorAll('.reveal-on-scroll').forEach(el => {
             observer.observe(el);
         });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+
+        const closeMobileMenu = () => {
+            if (!mobileMenu || !mobileMenuButton || !mobileMenuIcon) return;
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            mobileMenuButton.setAttribute('aria-label', 'Open menu');
+            mobileMenuIcon.textContent = 'menu';
+        };
+
+        if (mobileMenuButton && mobileMenu && mobileMenuIcon) {
+            mobileMenuButton.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden', isOpen);
+                mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
+                mobileMenuButton.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+                mobileMenuIcon.textContent = isOpen ? 'menu' : 'close';
+            });
+
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+        }
 
         // Smooth scroll adjustment for fixed header
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
